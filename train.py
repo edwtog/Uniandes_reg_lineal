@@ -1,16 +1,16 @@
 import pandas as pd
 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
 # Cargar los datos del archivo CSV
 file_path = './data/student_scores.csv'
 data = pd.read_csv(file_path)
 
 # Visualizar las primeras filas del conjunto de datos para entender su estructura
 data.head()
-
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import numpy as np
 
 # Preparar los datos para el entrenamiento del modelo
 X = data[['Hours']]  # Variable independiente
