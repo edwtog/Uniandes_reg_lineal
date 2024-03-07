@@ -8,7 +8,7 @@ Este repositorio contiene un ejemplo básico de cómo crear una API utilizando F
 
 Antes de ejecutar el código en este repositorio, asegúrate de tener instalado lo siguiente:
 
-- Python (preferiblemente Python 3.9 o superior)
+- Python (preferiblemente Python 3.10 o superior)
 - pip (gestor de paquetes de Python)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Uvicorn](https://www.uvicorn.org/)
