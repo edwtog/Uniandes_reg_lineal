@@ -17,9 +17,16 @@ Puedes instalar los requisitos utilizando el siguiente comando:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 El servidor se inicia con el comando
 
 ```bash
 uvicorn apy:app --reload
+```
+
+Para realizar un predicción:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/predict/" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"hours\": 5.0}"
+```
