@@ -17,3 +17,8 @@ Puedes instalar los requisitos utilizando el siguiente comando:
 
 ```bash
 pip install -r requirements.txt
+
+El servidor se inicia con el comando
+
+```bash
+uvicorn apy:app --reload
