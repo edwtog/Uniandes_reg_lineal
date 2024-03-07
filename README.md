@@ -1,6 +1,6 @@
 # FastAPI ML Model Deployment Example
 
-[![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
+[![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3101/)
 
 Este repositorio contiene un ejemplo básico de cómo crear una API utilizando FastAPI para desplegar un modelo de machine learning. En este ejemplo, se utiliza un modelo de regresión para demostrar el proceso de implementación de una API utilizando FastAPI.
 
