@@ -5,6 +5,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 
+from joblib import dump
+
 # Cargar los datos del archivo CSV
 file_path = './data/student_scores.csv'
 data = pd.read_csv(file_path)
@@ -33,8 +35,6 @@ rmse = np.sqrt(mse)
 r2 = r2_score(y_test, y_pred)
 
 (mae, mse, rmse, r2)
-
-from joblib import dump
 
 # Guardar el modelo en un archivo
 dump(model, 'modelo_regresion_lineal.joblib')
