@@ -35,16 +35,19 @@ Para realizar una predicción desde otra terminal:
 curl -X POST "http://127.0.0.1:8000/predict/" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"hours\": 5.0}"
 ```
 
-# Streamlit
+## Streamlit
 
 Interfaz de Usuario con Streamlit
+
 Para ejecutar la interfaz de usuario generada con Streamlit, utiliza el siguiente comando:
 ```bash
 streamlit run streamlit_apy.py
 ```
-# Dash
+
+## Dash
 
 Interfaz de Usuario con Dash
+
 Para ejecutar la interfaz de usuario generada con Dash, utiliza el siguiente comando:
 ```bash
 python dash_apy.py
