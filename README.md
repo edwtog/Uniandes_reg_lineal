@@ -23,14 +23,29 @@ Puedes instalar los requisitos utilizando el siguiente comando:
 pip install -r requirements.txt
 ```
 
-El servidor se inicia con el comando
+## Ejecución
 
+API con FastAPI
+Para ejecutar la aplicación y desplegar la API con FastAPI, simplemente ejecuta el siguiente comando en tu terminal:
 ```bash
 uvicorn apy:app --reload
 ```
-
 Para realizar una predicción desde otra terminal:
-
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict/" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"hours\": 5.0}"
+```
+
+# Streamlit
+
+Interfaz de Usuario con Streamlit
+Para ejecutar la interfaz de usuario generada con Streamlit, utiliza el siguiente comando:
+```bash
+streamlit run streamlit_apy.py
+```
+# Dash
+
+Interfaz de Usuario con Dash
+Para ejecutar la interfaz de usuario generada con Dash, utiliza el siguiente comando:
+```bash
+python dash_apy.py
 ```
