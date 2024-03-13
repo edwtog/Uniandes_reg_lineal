@@ -1,0 +1,5 @@
+conda create --name my_environment python=3.10
+
+pip install <package-name>
+
+pip freeze > requirements.txt
