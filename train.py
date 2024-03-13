@@ -12,7 +12,7 @@ file_path = './data/student_scores.csv'
 data = pd.read_csv(file_path)
 
 # Visualizar las primeras filas del conjunto de datos para entender su estructura
-data.head()
+#data.head()
 
 # Preparar los datos para el entrenamiento del modelo
 X = data[['Hours']]  # Variable independiente
@@ -34,7 +34,7 @@ mse = mean_squared_error(y_test, y_pred)
 rmse = np.sqrt(mse)
 r2 = r2_score(y_test, y_pred)
 
-(mae, mse, rmse, r2)
+#(mae, mse, rmse, r2)
 
 # Guardar el modelo en un archivo
 dump(model, 'modelo_regresion_lineal.joblib')
